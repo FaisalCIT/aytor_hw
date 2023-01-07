@@ -1,0 +1,313 @@
+/*
+Template Name: Aytor
+Version: 1.0.0
+Author:Aytor
+Author URI:
+
+Table of Content
+======================================
+=> Home Page
+*************
+   1) Nav Section
+   2) Banner Section
+*/
+/* Common Css Start */
+body {
+    font-family: "Roboto", sans-serif;
+ }
+ h1,h2,h3,h4,h5,h6,
+ a,button{
+    font-family: "Josefin Sans", sans-serif;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ small,
+ span,
+ ul,
+ ol {
+   margin: 0;
+   padding: 0;
+ }
+ ul,
+ ol {
+   list-style-type: none;
+ }
+ a {
+   text-decoration: none;
+ }
+ /* //Common Css End */
+ 
+ /* Nav Section Css Start */
+ nav #menu ul li a{
+  font-size: 16px;
+  color: #11161E;
+ }
+ nav #menu .navbar_icon ul li button{
+  background: none;
+  border: none;
+  position: relative;
+ }
+ nav #menu .navbar_icon ul li button span{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  background: #FF6F61;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+ }
+ nav #menu .navbar_icon{
+  font-size: 20px;
+ }
+ nav #menu .navbar_icon .child_1{
+  padding-left: 20px;
+  color: #000;
+ }
+ /* //Nav Section Css End */
+
+ /* Banner Section Css Start */
+ #banner .banner_content{
+  color: #fff;
+ }
+ #banner .banner_content h4{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+ }
+ #banner .banner_content h1{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+ }
+ #banner .banner_content p{
+  font-size: 16px;
+  line-height: 28px;
+ }
+ #banner .banner_content a {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: capitalize;
+  background: #FF6F61;
+  padding: 16px 26px;
+  margin-top: 40px;
+  display: inline-block;
+ }
+ #banner .slider_item{
+  height: 800px;
+  background-size: cover !important;
+  background-position: center !important;
+ }
+ #banner .slider .slider_dots{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 190px;
+  left: 25px;
+ }
+ #banner .slider .slider_dots li{
+  line-height: 0;
+  margin-right: 5px;
+ }
+ #banner .slider .slider_dots li button{
+  font-size: 0px;
+  border: none;
+  width: 10px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: .3s;
+ }
+ #banner .slider .slider_dots li.slick-active button{
+  width: 26px;
+  background: #FF6F61;
+ }
+ /* //Banner Section Css End */
+
+ /* Gallery Section Css Start */
+ #gallery{
+  margin: 100px 0;
+ }
+ #gallery .item_1 img{
+  display: block;
+  width: 100%;
+ }
+ #gallery .item_1 .child_2 img{
+  margin-top: 19px;
+ }
+ #gallery .item_2 img{
+  display: block;
+  width: 100%;
+ }
+ #gallery .child_1{
+  position: relative;
+ }
+ #gallery .child_2{
+  position: relative;
+ }
+ #gallery .section_info .overlay{
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+ }
+ #gallery .section_info:hover .overlay{
+  opacity: 1;
+  visibility: visible;
+ }
+ #gallery .section_info h5{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+ }
+ #gallery .section_info a{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #fff;
+ }
+ /* //Gallery Section Css End */
+
+ /* New Arrival Section Css Start */
+ #new_arrival{
+  margin-bottom: 100px;
+ }
+ #new_arrival .arrival_info{
+  border: 1px solid #F1F3F4;
+  text-align: center;
+ }
+ #new_arrival .arrival_info ins{
+  font-size: 16px;
+  color: #444444;
+  padding-right: 5px;
+  line-height: 26px;
+ }
+ #new_arrival .arrival_info del{
+  font-size: 16px;
+  color: #BDBDBD;
+  padding-left: 5px;
+  line-height: 26px;
+ }
+ #new_arrival .arrival_info h3{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 0;
+  line-height: 26px;
+ }
+ #new_arrival .arrival_info .arrival_icon{
+  color: #FF6F61;
+  padding-bottom: 30px;
+ }
+ #new_arrival .arrival_title h5{
+  font-size: 36px;
+  font-weight: 700;
+  color: #11161E;
+  line-height: 46px;
+  margin-bottom: 25px;
+ }
+ #new_arrival .arrival_icon_overlay ul li a{
+  width: 36px;
+  height: 36px;
+  color: #000;
+  border-radius: 50%;
+  background: #FF6F61;
+  display: inline-block;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+  margin: 5px 0;
+  text-align: center;
+  line-height: 37px;
+ }
+ #new_arrival .arrival_arrow{
+  background-color: rgba(21, 26, 50, .5);
+  color: #fff;
+  padding: 17px 9px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+ }
+ #new_arrival .arrival_arrow.fa-chevron-left{
+  left: 24px;
+ }
+ #new_arrival .arrival_arrow.fa-chevron-right{
+  right: 24px;
+ }
+ #new_arrival .arrival_item{
+  position: relative;
+  padding: 0 12px;
+ }
+ #new_arrival .arrival_item .arrival_icon_overlay{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+ }
+ #new_arrival .arrival_item:hover .arrival_icon_overlay{
+  opacity: 1;
+  visibility: visible;
+ }
+ #new_arrival .arrival_item .arrival_badge{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background: #FF6F61;
+  color: #fff;
+  padding: 0px 8px;
+  transform: rotate(-90deg);
+  border-radius: 20px 0 0 20px;
+ }
+ /* //New Arrival Section Css End */
+
+ /* Offer Banner Section Css Start */
+ #offer_banner{
+  background: url(../image/offer-banner-2.jpg);
+  height: 524px;
+  background-size: cover;
+  background-position: center;
+  margin: 100px 0;
+ }
+ #offer_banner .offer_banner_content{
+  color: #fff;
+ }
+ #offer_banner .offer_banner_content h5{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 46px;
+ }
+ #offer_banner .offer_banner_content p{
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 40px;
+ }
+ #offer_banner .offer_banner_content a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  background: #FF6F61;
+  padding: 14px 22px;
+  margin-top: 40px;
+  display: inline-block;
+ }
+ /* Offer Banner Section Css End */
